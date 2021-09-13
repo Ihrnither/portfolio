@@ -10,7 +10,7 @@ const ICONS = [
     href: "https://www.linkedin.com/in/ziad-gaafar-096a381a0/",
     icon: <LinkedIn />,
   },
-  { href: "https://github.com/Ihrnither", icon: <GitHub /> },
+  { href: "https://github.com/ziadgaafar", icon: <GitHub /> },
 ];
 
 const Footer = () => {
