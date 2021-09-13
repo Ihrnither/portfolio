@@ -1,6 +1,7 @@
 import { Box, Typography } from "@material-ui/core";
 import CustomButton from "./CustomButtom";
 import Particles from "./Particles";
+import { Link } from "react-scroll";
 
 const NAME = "Ziad Gaafar";
 
@@ -38,14 +39,15 @@ const Home = () => {
         , <br />
         I'm a full-stack web developer.
       </Typography>
-
-      <CustomButton
-        arrowIcon
-        text="View my work"
-        scrollTo="about"
-        marginTop={2}
-        fontSize={{ xs: 16, sm: 20, md: 24 }}
-      />
+      <Link to="about" smooth spy={true} duration={500}>
+        <CustomButton
+          arrowIcon
+          text="View my work"
+          scrollTo="about"
+          marginTop={2}
+          fontSize={{ xs: 16, sm: 20, md: 24 }}
+        />
+      </Link>
     </Box>
   );
 };

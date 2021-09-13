@@ -8,7 +8,6 @@ import {
   Divider,
   Grid,
   Typography,
-  ClickAwayListener,
 } from "@material-ui/core";
 import { Launch, Close } from "@material-ui/icons";
 import { Box } from "@material-ui/system";
@@ -22,7 +21,6 @@ import { Carousel } from "react-responsive-carousel";
 const Project = ({ index, p, inView }) => {
   const [showDetails, setShowDetails] = useState(false);
   const [learnMore, setLearnMore] = useState(false);
-
   return (
     <>
       <Grid
@@ -120,69 +118,63 @@ const Project = ({ index, p, inView }) => {
           backgroundColor: "rgba(0, 0, 0, 0.1)",
         }}
       >
-        <ClickAwayListener onClickAway={() => setLearnMore(false)}>
-          <Card
-            sx={{
-              width: {
-                sm: "90vw",
-                md: "80vw",
-                lg: "60vw",
-              },
-              userSelect: "none",
-            }}
+        <Card
+          sx={{
+            width: {
+              sm: "90vw",
+              md: "80vw",
+              lg: "60vw",
+            },
+            userSelect: "none",
+          }}
+        >
+          <Carousel
+            showThumbs={false}
+            showStatus={false}
+            infiniteLoop
+            emulateTouch
+            stopOnHover
           >
-            <Carousel
-              showThumbs={false}
-              showStatus={false}
-              infiniteLoop
-              emulateTouch
-              stopOnHover
-            >
-              {p.images.map((image, index) => (
-                <CardMedia
-                  key={index}
-                  component="img"
-                  image={image}
-                  alt={image + index}
-                />
-              ))}
-            </Carousel>
-            <CardContent>
-              <Typography variant="h5" fontWeight="bold">
-                {/* {p.link.split("//")[1]} */}
-                {p.name}
-              </Typography>
-              <Typography color="text.secondary" fontWeight="bold">
-                {p.type}
-              </Typography>
-              <Divider sx={{ my: 1 }} />
-              <Typography variant="body2" color="text.secondary">
-                {p.description}
-              </Typography>
-            </CardContent>
-            <CardActions>
-              <Grid
-                container
-                justifyContent="space-between"
-                alignItems="center"
-              >
-                <CustomButton
-                  href={p.link}
-                  borderColor="secondary.main"
-                  fontSize="12"
-                  hoverBg="secondary.main"
-                  text="VIEW WEBSITE"
-                  backgroundColor="secondary.main"
-                  startIcon={<Launch />}
-                  onClick={() => window.open(p.link, "_blank")}
-                />
-                <IconButton onClick={() => setLearnMore(false)}>
-                  <Close sx={{ color: "text.secondary" }} />
-                </IconButton>
-              </Grid>
-            </CardActions>
-          </Card>
-        </ClickAwayListener>
+            {p.images.map((image, index) => (
+              <CardMedia
+                key={index}
+                component="img"
+                image={image}
+                alt={image + index}
+              />
+            ))}
+          </Carousel>
+          <CardContent>
+            <Typography variant="h5" fontWeight="bold">
+              {/* {p.link.split("//")[1]} */}
+              {p.name}
+            </Typography>
+            <Typography color="text.secondary" fontWeight="bold">
+              {p.type}
+            </Typography>
+            <Divider sx={{ my: 1 }} />
+            <Typography variant="body2" color="text.secondary">
+              {p.description}
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Grid container justifyContent="space-between" alignItems="center">
+              <CustomButton
+                href={p.link}
+                borderColor="secondary.main"
+                fontSize="12"
+                hoverBg="secondary.main"
+                text="VIEW WEBSITE"
+                backgroundColor="secondary.main"
+                startIcon={<Launch />}
+                onClick={() => window.open(p.link, "_blank")}
+              />
+              <IconButton onClick={() => setLearnMore(false)}>
+                <Close sx={{ color: "text.secondary" }} />
+              </IconButton>
+            </Grid>
+          </CardActions>
+        </Card>
       </Backdrop>
     </>
   );
