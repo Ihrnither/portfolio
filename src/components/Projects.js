@@ -4,7 +4,7 @@ import Project from "./Project";
 
 const PROJECTS = [
   {
-    images: ["movies.png", "movies1.png", "movies2.png"],
+    images: ["movies.jpg", "movies1.jpg", "movies2.jpg"],
     name: "Movies&Series Website",
     type: "TMDB Website",
     techUsed: "Next.js / TMDB API",
@@ -12,7 +12,7 @@ const PROJECTS = [
     link: "https://movies-website.vercel.app",
   },
   {
-    images: ["ecommerce.png", "ecommerce1.png"],
+    images: ["ecommerce.jpg", "ecommerce1.jpg"],
     name: "Ecommerce Shop",
     type: "Online Shop",
     techUsed: "Next.js / Express.js / MongoDB",
@@ -21,7 +21,7 @@ const PROJECTS = [
     link: "https://ecommerce-shop-three.vercel.app",
   },
   {
-    images: ["dolla.png"],
+    images: ["dolla.jpg"],
     name: "dolla",
     type: "Landing Page",
     techUsed: "React / Styled-Components",
