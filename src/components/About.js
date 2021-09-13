@@ -6,10 +6,6 @@ import {
   LinearProgress,
 } from "@material-ui/core";
 import SpeedIcon from "@material-ui/icons/Speed";
-import MonitorIcon from "@material-ui/icons/DesktopWindows";
-import PhoneAndroidIcon from "@material-ui/icons/PhoneAndroid";
-import EmojiObjectsIcon from "@material-ui/icons/EmojiObjects";
-import DynamicFormIcon from "@material-ui/icons/DynamicForm";
 import { motion } from "framer-motion";
 import { InView } from "react-intersection-observer";
 
@@ -24,30 +20,56 @@ const ITEMS = [
     label: "Responsive",
     description: "My layouts will work on any device, big or small.",
     icon: (
-      <Box sx={{ position: "relative" }}>
-        <MonitorIcon sx={{ color: "white", fontSize: 64 }} />
-        <PhoneAndroidIcon
-          fontSize="large"
-          sx={{
-            color: "white",
-            position: "absolute",
-            top: "40%",
-            left: "60%",
-          }}
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+        role="img"
+        preserveAspectRatio="xMidYMid meet"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M22 17h-4v-7h4m1-2h-6a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1M4 6h18V4H4a2 2 0 0 0-2 2v11H0v3h14v-3H4V6z"
+          fill="#fff"
         />
-      </Box>
+      </svg>
     ),
   },
   {
     label: "Intuitive",
     description: "Strong preference for easy to use, intuitive UX/UI.",
-    icon: <EmojiObjectsIcon sx={{ color: "white", fontSize: 64 }} />,
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+        role="img"
+        preserveAspectRatio="xMidYMid meet"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5z"
+          fill="#fff"
+        />
+      </svg>
+    ),
   },
   {
     label: "Dynamic",
     description:
       "Websites don't have to be static, I love making pages come to life.",
-    icon: <DynamicFormIcon sx={{ color: "white", fontSize: 64 }} />,
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+        role="img"
+        preserveAspectRatio="xMidYMid meet"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M13.13 22.19l-1.63-3.83c1.57-.58 3.04-1.36 4.4-2.27l-2.77 6.1M5.64 12.5l-3.83-1.63l6.1-2.77C7 9.46 6.22 10.93 5.64 12.5M21.61 2.39S16.66.269 11 5.93c-2.19 2.19-3.5 4.6-4.35 6.71c-.28.75-.09 1.57.46 2.13l2.13 2.12c.55.56 1.37.74 2.12.46A19.1 19.1 0 0 0 18.07 13c5.66-5.66 3.54-10.61 3.54-10.61m-7.07 7.07c-.78-.78-.78-2.05 0-2.83s2.05-.78 2.83 0c.77.78.78 2.05 0 2.83c-.78.78-2.05.78-2.83 0m-5.66 7.07l-1.41-1.41l1.41 1.41M6.24 22l3.64-3.64c-.34-.09-.67-.24-.97-.45L4.83 22h1.41M2 22h1.41l4.77-4.76l-1.42-1.41L2 20.59V22m0-2.83l4.09-4.08c-.21-.3-.36-.62-.45-.97L2 17.76v1.41z"
+          fill="#fff"
+        />
+      </svg>
+    ),
   },
 ];
 
