@@ -184,13 +184,13 @@ const About = () => {
                   fontWeight="bold"
                   gutterBottom
                 >
-                  Who's this guy?
+                  {`Who's this guy?`}
                 </Typography>
                 <Typography align="center">
-                  I'm a Full-Stack Web Developer in Egypt. I have been
+                  {`I'm a Full-Stack Web Developer in Egypt. I have been
                   performing as a web developer for 2 years and am still in the
                   process of gaining more experience through more years. As
-                  you're reading this, I'm working to develop my skills.
+                  you're reading this, I'm working to develop my skills.`}
                 </Typography>
               </Stack>
             </Grid>

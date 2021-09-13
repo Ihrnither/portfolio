@@ -32,12 +32,12 @@ const Home = () => {
           },
         }}
       >
-        Hello, I'm{" "}
+        {`Hello, I'm `}
         <Box component="strong" sx={{ color: "secondary.main" }}>
           {NAME}
         </Box>
-        , <br />
-        I'm a full-stack web developer.
+        {`,`} <br />
+        {`I'm a full-stack web developer.`}
       </Typography>
       <Link to="about" smooth spy={true} duration={500}>
         <CustomButton

@@ -68,7 +68,6 @@ const Header = () => {
                 spy={true}
                 duration={500}
                 offset={index !== 0 ? -50 : 0}
-                key={index}
                 onSetActive={() => setActive(link.href.toLowerCase())}
               >
                 <Link
@@ -146,7 +145,6 @@ const Header = () => {
                     spy={true}
                     duration={500}
                     offset={index !== 0 ? -50 : 0}
-                    key={index}
                     onSetActive={() => setActive(link.href.toLowerCase())}
                   >
                     {link.label.toUpperCase()}

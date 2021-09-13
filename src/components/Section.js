@@ -8,7 +8,6 @@ const Section = ({ children, bgColor, title, textColor, index }) => {
       id={title.toLowerCase()}
       alignItems="center"
       component="section"
-      id={title.toLowerCase()}
       sx={{
         backgroundColor: bgColor ? bgColor : "#fff",
         paddingY: title.toLowerCase() === "contact" ? 24 : 8,
