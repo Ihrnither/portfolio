@@ -32,7 +32,7 @@ const PROJECTS = [
 
 const Projects = () => {
   return (
-    <InView threshold={0.6}>
+    <InView threshold={0.3}>
       {({ ref, inView }) => (
         <Grid container ref={ref} justifyContent="center">
           {PROJECTS.map((p, index) => (
