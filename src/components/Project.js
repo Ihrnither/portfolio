@@ -146,7 +146,6 @@ const Project = ({ index, p, inView }) => {
           </Carousel>
           <CardContent>
             <Typography variant="h5" fontWeight="bold">
-              {/* {p.link.split("//")[1]} */}
               {p.name}
             </Typography>
             <Typography color="text.secondary" fontWeight="bold">
@@ -167,7 +166,10 @@ const Project = ({ index, p, inView }) => {
                 text="VIEW WEBSITE"
                 backgroundColor="secondary.main"
                 startIcon={<Launch />}
-                onClick={() => window.open(p.link, "_blank")}
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open(p.link, "_blank");
+                }}
               />
               <IconButton onClick={() => setLearnMore(false)}>
                 <Close sx={{ color: "text.secondary" }} />
