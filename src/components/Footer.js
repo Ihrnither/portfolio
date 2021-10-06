@@ -7,7 +7,7 @@ import { Facebook, LinkedIn, GitHub } from "@material-ui/icons";
 const ICONS = [
   { href: "https://facebook.com/ziadg3fr", icon: <Facebook /> },
   {
-    href: "https://www.linkedin.com/in/ziad-gaafar-096a381a0/",
+    href: "https://www.linkedin.com/in/ziadgaafar/",
     icon: <LinkedIn />,
   },
   { href: "https://github.com/ziadgaafar", icon: <GitHub /> },
