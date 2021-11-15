@@ -8,6 +8,7 @@ import {
   Divider,
   Grid,
   Typography,
+  ClickAwayListener,
 } from "@material-ui/core";
 import { Launch, Close } from "@material-ui/icons";
 import { Box } from "@material-ui/system";
@@ -117,8 +118,10 @@ const Project = ({ index, p, inView }) => {
           zIndex: (theme) => theme.zIndex.appBar + 1,
           backgroundColor: "rgba(0, 0, 0, 0.1)",
         }}
+        onClick={() => setLearnMore(false)}
       >
         <Card
+          onClick={(e) => e.stopPropagation()}
           sx={{
             width: {
               sm: "90vw",
