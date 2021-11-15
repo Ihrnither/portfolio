@@ -76,11 +76,12 @@ const ITEMS = [
 const SKILLS = [
   { name: "HTML", value: 85 },
   { name: "CSS", value: 85 },
-  { name: "Javascript", value: 80 },
-  { name: "React", value: 70 },
-  { name: "Node.js", value: 65 },
-  { name: "MongoDB", value: 60 },
-  { name: "Next.js", value: 65 },
+  { name: "Javascript", value: 85 },
+  { name: "React", value: 85 },
+  { name: "Redux", value: 65 },
+  { name: "Next.js", value: 75 },
+  { name: "Node.js", value: 80 },
+  { name: "MongoDB", value: 65 },
 ];
 
 const About = () => {
@@ -209,10 +210,7 @@ const About = () => {
                   {`Who's this guy?`}
                 </Typography>
                 <Typography align="center">
-                  {`I'm a Full-Stack Web Developer in Egypt. I have been
-                  performing as a web developer for 2 years and am still in the
-                  process of gaining more experience through more years. As
-                  you're reading this, I'm working to develop my skills.`}
+                  {`I'm a Self-Taught Fast-Learner Experienced Web Developer adept in all stages of advanced web development. Performing as a web developer for 2 years and am still in the process of gaining more experience through more years. Able to effectively self manage during independent projects, as well as collaborate in a team setting.`}
                 </Typography>
               </Stack>
             </Grid>
