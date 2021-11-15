@@ -10,6 +10,7 @@ const PROJECTS = [
     techUsed: "Next.js / TMDB API",
     description: `Shows information about movies and series with searching functionality, Consuming TMDB Api.`,
     link: "https://movies-website.vercel.app",
+    github: "https://github.com/ziadgaafar/movies-website",
   },
   {
     images: ["ecommerce.jpg", "ecommerce1.jpg"],
@@ -19,6 +20,7 @@ const PROJECTS = [
     description:
       "Full-Stack Ecommerce website with Stripe Checkout, Authentication and authorization, Admin role for managing, adding and deleting products, orders, categories and accounts.",
     link: "https://ecommerce-shop-three.vercel.app",
+    github: "https://github.com/ziadgaafar/ecommerce-shop",
   },
   {
     images: ["dolla.jpg"],
@@ -27,6 +29,7 @@ const PROJECTS = [
     techUsed: "React / Styled-Components",
     description: "Simple react app with styled-component and smooth-scroll.",
     link: "https://hardcore-rosalind-839155.netlify.app",
+    github: "https://github.com/ziadgaafar/dolla",
   },
 ];
 

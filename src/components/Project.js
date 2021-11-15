@@ -15,7 +15,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import CustomButton from "./CustomButtom";
 
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
 const Project = ({ index, p, inView }) => {
@@ -158,19 +158,34 @@ const Project = ({ index, p, inView }) => {
           </CardContent>
           <CardActions>
             <Grid container justifyContent="space-between" alignItems="center">
-              <CustomButton
-                href={p.link}
-                borderColor="secondary.main"
-                fontSize="12"
-                hoverBg="secondary.main"
-                text="VIEW WEBSITE"
-                backgroundColor="secondary.main"
-                startIcon={<Launch />}
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.open(p.link, "_blank");
-                }}
-              />
+              <Grid item>
+                <CustomButton
+                  href={p.link}
+                  borderColor="secondary.main"
+                  fontSize="12"
+                  hoverBg="secondary.main"
+                  text="VIEW WEBSITE"
+                  backgroundColor="secondary.main"
+                  startIcon={<Launch />}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.open(p.link, "_blank");
+                  }}
+                />
+                <CustomButton
+                  href={p.github}
+                  borderColor="info.dark"
+                  fontSize="12"
+                  hoverBg="info.dark"
+                  text="GITHUB"
+                  backgroundColor="info.dark"
+                  startIcon={<Launch />}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.open(p.github, "_blank");
+                  }}
+                />
+              </Grid>
               <IconButton onClick={() => setLearnMore(false)}>
                 <Close sx={{ color: "text.secondary" }} />
               </IconButton>
