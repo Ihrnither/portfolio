@@ -49,7 +49,7 @@ const Project = ({ index, p, inView }) => {
           alt={p.images[0]}
           style={{
             width: "100%",
-            objectFit: "cover",
+            objectFit: "contain",
             height: 300,
           }}
           animate={{
