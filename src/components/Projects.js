@@ -31,6 +31,24 @@ const PROJECTS = [
     link: "https://hardcore-rosalind-839155.netlify.app",
     github: "https://github.com/ziadgaafar/dolla",
   },
+  {
+    images: ["smarteduservices-1.jpg", "smarteduservices-2.jpg"],
+    name: "smarteduservices",
+    type: "Freelancing System",
+    techUsed: "React / Tailwindcss / Formik",
+    description: "System for managing freelancing projects, freenalcers, clients, customer service and customer support.",
+    link: null,
+    github: null,
+  },
+  {
+    images: ["octagator-1.jpg", "octagator-2.jpg"],
+    name: "octagator",
+    type: "Custom Wordpress Plugins",
+    techUsed: "React / Tailwindcss / Formik",
+    description: "Custom Wordpress plugins for managins products, warehouses, orders, selling partners, accounting and more.",
+    link: null,
+    github: null,
+  },
 ];
 
 const Projects = () => {
