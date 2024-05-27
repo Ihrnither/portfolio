@@ -41,7 +41,7 @@ const PROJECTS = [
     github: null,
   },
   {
-    images: ["octagator-1.jpg", "octagator-2.jpg"],
+    images: ["octagator-1.png", "octagator-2.png", "octagator-3.png", "octagator-4.png"],
     name: "octagator",
     type: "Custom Wordpress Plugins",
     techUsed: "React / Tailwindcss / Formik",
