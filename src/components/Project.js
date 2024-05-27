@@ -163,6 +163,7 @@ const Project = ({ index, p, inView }) => {
             <Grid container justifyContent="space-between" alignItems="center">
               <Grid item>
                 <CustomButton
+                  disabled={!p.link}
                   href={p.link}
                   borderColor="secondary.main"
                   fontSize="12"
@@ -176,6 +177,7 @@ const Project = ({ index, p, inView }) => {
                   }}
                 />
                 <CustomButton
+                  disabled={!p.github}
                   href={p.github}
                   borderColor="info.dark"
                   fontSize="12"
